@@ -1,13 +1,12 @@
-import React from 'react'
-import { Button } from './components/ui/button'
+import React from "react";
+import { Button } from "./components/ui/button";
+import AppRoutes from "./routes/AppRoutes";
 const App = () => {
   return (
-    <div>
-      <Button>
-        My Button
-        </Button>
-    </div>
-  )
-}
+    <>
+      <AppRoutes />
+    </>
+  );
+};
 
-export default App
+export default App;
