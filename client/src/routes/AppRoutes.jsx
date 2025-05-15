@@ -1,3 +1,4 @@
+import Login from "@/components/Login/Login";
 import Layout from "@/layouts/Layout";
 import LayoutAdmin from "@/layouts/LayoutAdmin";
 import About from "@/pages/About";
@@ -24,6 +25,13 @@ const AppRoutes = () => {
           >
             <Route index element={<Dashboard/>} />
             <Route path="manage" element={<Manage/>} />
+          </Route>
+
+
+
+          {/*Test*/}
+          <Route>
+            <Route path="login" element={<Login/>}/>
           </Route>
 
           <Route path="*" element={<NotFound/>} />
